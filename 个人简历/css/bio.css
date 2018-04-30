@@ -1,0 +1,387 @@
+.head{
+	background: #f8f6f7;
+}
+.logo{
+	height:100px;
+	max-height:100px;
+}
+.logo img{
+	height: 100%;
+}
+.m0{
+	text-align: right;
+}
+.nav ul{
+	list-style: none;
+	padding: 0;
+}
+.nav ul li{
+	display: inline-block;
+	margin-top:10px;
+}
+.nav ul li a{
+	transition: .5s;
+	font-size:18px;
+	display: inline-block;
+	padding: 0 20px;
+	color: #333;
+	display: inline-block;
+	font-family: arial;
+	border-top:8px solid transparent;
+	padding: 25px 20px;
+}
+.nav ul li a:hover{
+	text-decoration: none;
+	background: gray;
+	color: #fff;
+	border-top:8px solid #375392;
+}
+.ewm{
+	float: right;
+}
+.mewm{
+	position: absolute;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	right:0px;
+	top:37px;
+	height:0;
+	cursor: pointer;
+	transition: .5s;
+	opacity: .8;
+}
+.mewm img{
+	height:100%;
+}
+.last{
+	border:0 !important;
+	position: relative;
+	margin-left:20px;
+}
+.last:hover .mewm{
+	height:200px;
+	position: absolute;
+	z-index: 999;
+}
+.introduce{
+	padding: 20px;
+}
+.title1{
+	text-align: center;
+}
+.title1 h2{
+	font-size:50px;
+	font-weight: lighter;
+	color: #375392;
+	font-family:华文楷体;
+	text-shadow: 2px 2px 5px #444;
+	opacity: .5;
+}
+.line{
+	border-bottom:3px solid #375392;
+	width: 10%;
+	margin:0 auto;
+	box-shadow:2px 2px 10px #222;
+}
+.title1 p{
+	margin-top:40px;
+	font-size:20px;
+	color: #999;
+	font-family:华文楷体;
+	font-weight: bold;
+}
+.introduce .con img{
+	height:80px;
+	border-radius:50%;
+	position: absolute;
+	top:-40px;
+	left:38%;
+	animation: con_img 10s linear infinite;
+}
+@keyframes con_img{
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(90deg);}
+	50%{transform:rotate(180deg);}
+	75%{transform:rotate(270deg);}
+	100%{transform:rotate(360deg);}
+}
+.con{
+	border: 1px solid #375392;
+	border-radius: 10px;
+	position: relative;
+	margin-top:40px;
+	box-shadow:2px 2px 10px #375392;
+}
+.con p{
+	padding: 80px 10px 0;
+	text-indent: 2em;
+	transition: .8s;
+}
+.con p:hover{
+	color: orange;
+	transform: translate(0,-10px);
+}
+.m1{
+	margin-top:40px;
+}
+.m2{
+	margin-top:3%;
+	margin-bottom:3%;
+}
+.m2 img{
+	margin-top:20px;
+}
+.m3 img{
+	margin-top:20px;
+}
+.m4{
+	margin:8% 0;
+}
+.m4 a{
+	text-align: center;
+	display: block;
+	width: 200px;
+	background: #395292;
+	margin-left:43%;
+	height:50px;
+	line-height: 50px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	transition: 1s;
+}
+.m4 a:hover{
+	color: #395292;
+	text-decoration: none;
+	background: orange;
+}
+.show{
+	margin-top: 80px;
+	padding: 50px 0;
+	background: #eee;
+}
+.show img{
+	width: 100%;
+	height:300px;
+	margin:20px 0px 0px 10px;
+	z-index: 3;
+	transition: .5s;
+}
+.show img:hover{
+	box-shadow:0px 0px 10px #395292;
+	transform: scale(1.2);
+}
+.jl{
+	background: linear-gradient(#688ebf,#395292);
+	color:#fff;
+	padding-top: 4%;
+	padding-bottom: 9%;
+}
+.jl .title1 h2{
+	color:#fff;
+}
+.jl .title1 .line{
+	padding: 0;
+	margin-top:40px;
+	border-color:#fff;
+	box-shadow:2px 5px 10px #333;
+}
+.jl .nav2 ul{
+	list-style: none;
+	padding: 0;
+	margin-top:4%;
+}
+.jl .nav2 ul li{
+	height:50px;
+	line-height: 50px;
+	width: 100%;
+	padding-left: 10px;
+	border: 1px dashed transparent;
+}
+.jl .nav2 ul li:hover{
+	border: 1px dashed orange;
+}
+.jl .nav2 ul li time{
+	float: right;
+}
+.hj{
+	padding-top: 5%;
+	padding-bottom: 9%;
+	
+}
+.hj img{
+	width: 100%;
+	height:200px;
+	margin:20px 0;
+}
+.foot p{
+	color: #fff;
+}
+.foot a{
+	color: #fff;
+}
+.foot a:hover{
+	text-decoration: none;
+	color:#333;
+}
+.foot{
+	padding:30px 0;
+	background: #000;
+}
+.con1{
+	text-align: center;
+}
+.nav3{
+	text-align: right;
+	color: #333;
+}
+.nav3 a:hover{
+	color:#333;
+}
+@media (max-width: 992px){
+	.logo{
+		text-align: center;
+		width:100%;
+	}
+	.m0{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.nav ul li a{
+		font-size:13px;
+		display: inline-block;
+		padding: 0 40px;
+		color:#333;
+	}
+	.show img{
+		width: 100%;
+	}
+	.hj{
+		text-align: center;
+	}
+	.hj img{
+		height:300px;
+		width: auto;
+	}
+	.m4{
+		text-align: center;
+		
+	}
+}
+@media (max-width: 768px){
+	.show{
+		text-align: center;
+	}
+	.show img{
+		width: 40%;
+	}
+	.m4 a{
+		margin-left:35%;
+		width: 30%;
+	}
+}
+.fullSlide{
+	position:relative;
+	background:#000;
+	margin:0 auto;
+}
+.fullSlide .bd{
+	position:relative;
+	z-index:0;
+}
+.fullSlide .bd li img{
+	width:100%;
+	vertical-align:top;
+} 
+.fullSlide .hd{
+	position:relative;
+	z-index:1;
+	margin-top:-30px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	filter:alpha(opacity=60);
+	opacity:0.6;
+}
+.fullSlide .hd ul{
+	text-align:right;
+	padding-top:5px;
+}
+.fullSlide .hd ul li{
+	cursor:pointer;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:8px;
+	height:8px;
+	margin:5px;
+	background:url(../images/tg_flash_p.png) -18px 0;
+	overflow:hidden;
+	font-size:0;
+}
+.fullSlide .hd ul .on{
+	background-position:0 0;
+}
+.fullSlide .prev,.fullSlide .next{
+	z-index:1;
+	display:block;
+	width:40px;
+	height:40px;
+	position:relative;
+	margin:-17% 0 0 3%;
+	float:left;
+	background:url(../images/arrow.png) 0 0 no-repeat;
+	background-size: cover;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+}
+.fullSlide .next{
+	background-position:right 0;
+	float:right;
+	margin-right:3%;
+}
+.fullSlide .prev:hover,.fullSlide .next:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+p#back-to-top{
+    position:fixed;
+    display:none;
+    bottom:100px;
+    right:80px;
+    z-index: 999;
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:64px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+    color:#979797;
+}
+p#back-to-top a span{
+    background:transparent url(/static/imgs/sprite.png?1202) no-repeat -25px -290px;
+    border-radius:6px;
+    display:block;
+    height:64px;
+    width:56px;
+    margin-bottom:5px;
+    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    -moz-transition:background 1s;
+    -webkit-transition:background 1s;
+    -o-transition:background 1s;
+}
+#back-to-top a:hover span{
+    background:transparent url(/static/imgs/sprite.png?1202) no-repeat -25px -290px;
+}
+
+.m5{
+	margin-top:6%;
+}
