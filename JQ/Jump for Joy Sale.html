@@ -5,11 +5,36 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="org/jquery-1.6.2.min.js"></script>
+    <link rel="stylesheet" href="style/my_style.css">
     <title>Jump for Joy Sale</title>
 </head>
 <body>
-    <div class="main">
-
-    </div>
+    <header>
+        <div class="main" id="main">
+            <div class="img">
+                <img src="img/jump1.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/jump2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/jump3.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/jump4.jpg" alt="">
+            </div>
+        </div>
+    </header>
 </body>
 </html>
+<script>
+    $('document').ready(function () {
+        $('.img').click(function () {
+            var sale = Math.floor(Math.random()*5)+5;
+            var msg = '<p>your sale is '+sale + '%</p>';
+            $('.img p').remove();
+            $(this).append(msg);
+        });
+    });
+</script>
