@@ -13,16 +13,16 @@
     <header>
         <div class="main" id="main">
             <div class="img">
-                <img src="img/jump1.jpg" alt="">
+                <img src="img/jump1.jpg" id="jump1" alt="">
             </div>
             <div class="img">
-                <img src="img/jump2.jpg" alt="">
+                <img src="img/jump2.jpg" id="jump2" alt="">
             </div>
             <div class="img">
-                <img src="img/jump3.jpg" alt="">
+                <img src="img/jump3.jpg" id="jump3" alt="">
             </div>
             <div class="img">
-                <img src="img/jump4.jpg" alt="">
+                <img src="img/jump4.jpg" id="jump4" alt="">
             </div>
         </div>
     </header>
@@ -31,10 +31,20 @@
 <script>
     $('document').ready(function () {
         $('.img').click(function () {
-            var sale = Math.floor(Math.random()*5)+5;
-            var msg = '<p>your sale is '+sale + '%</p>';
-            $('.img p').remove();
-            $(this).append(msg);
+            var sale = Math.floor(Math.random()*50)+50;
+            var tu = Math.floor(Math.random()*4)+1;
+            var msg = '<p>your Code is : CODE'+sale + '</p>';
+            $('.img').each(function (index,value) {
+                console.log(tu);
+                if(tu == index+1){
+                    $(this).append(msg);
+                    $('.img').css('border-color','red');
+                    $(this).css('border-color','green');
+                }
+
+                $(this).unbind('click');
+            });
+//            $('.main').append(msg);
         });
     });
 </script>
