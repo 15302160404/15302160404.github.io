@@ -24,27 +24,9 @@
             <div class="img">
                 <img src="img/jump4.jpg" id="jump4" alt="">
             </div>
+            <div class="result"></div>
         </div>
     </header>
 </body>
 </html>
-<script>
-    $('document').ready(function () {
-        $('.img').click(function () {
-            var sale = Math.floor(Math.random()*50)+50;
-            var tu = Math.floor(Math.random()*4)+1;
-            var msg = '<p>your Code is : CODE'+sale + '</p>';
-            $('.img').each(function (index,value) {
-                console.log(tu);
-                if(tu == index+1){
-                    $(this).append(msg);
-                    $('.img').css('border-color','red');
-                    $(this).css('border-color','green');
-                }
-
-                $(this).unbind('click');
-            });
-//            $('.main').append(msg);
-        });
-    });
-</script>
+<script type="text/javascript" src="org/scripts.js"></script>
