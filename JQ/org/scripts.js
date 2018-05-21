@@ -1,21 +1,31 @@
 $('document').ready(function () {
-    $('.img').click(function () {
-        var sale = getRandoms(50,50);
-        var tu = getRandoms(4,1);
-        var msg = '<p>your Code is : CODE'+sale + '</p>';
-        $('.img').each(function (index,value) {
-            console.log(tu);
-            if(tu == index+1){
-                $(this).append(msg);
-                $('.img').css('border-color','red');
-                $(this).css('border-color','green');
-             }
-            $(this).unbind('click');
-        });
+    var code = getRandoms(50,50);
+    var id = getRandoms(4,1);
+    var ele = "<p class='tisi'></p>";
+    var msg = 'your Code is CODE'+code;
+    // randomEle();
+    $('.img').click(function(){
+        var a = $('.img img').attr('alt');
+        if(a == id)
+        {
+            randomEle();
+            $('img').parent().eq(id-1).css('border-color','green');
+            $('img').parent().eq(id-1).append(ele);
+            $('.result').html(msg);
+        }
+        else{
+            randomEle();
+            $('img').parent().eq(id-1).css('border-color','green');
+            $('.result').html('no');
+        }
+        $(this).unbind('click');
     });
 });
-
 function getRandoms(a,b)
 {
     return Math.floor(Math.random()*a)+b;
-} 
+}
+function randomEle()
+{
+    return $('img').parent().css('border-color','red');
+}
