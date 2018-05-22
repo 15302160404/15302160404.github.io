@@ -1,22 +1,21 @@
 $('document').ready(function () {
     var code = getRandoms(50,50);
     var id = getRandoms(4,1);
-    var ele = "<p class='tisi'></p>";
-    var msg = 'your Code is CODE'+code;
+    var msg = '<strong style="color:orange">Congratulations!!</strong><br>your Code is <strong style="color:cadetblue">CODE'+code+'</strong>';
     // randomEle();
-    $('.img').click(function(){
-        var a = $('.img img').attr('alt');
+    $('.img img').click(function(){
+        var a = $(this).attr('alt');
+        console.log(a);
         if(a == id)
         {
             randomEle();
             $('img').parent().eq(id-1).css('border-color','green');
-            $('img').parent().eq(id-1).append(ele);
             $('.result').html(msg);
         }
         else{
             randomEle();
             $('img').parent().eq(id-1).css('border-color','green');
-            $('.result').html('no');
+            $('.result').html('Sorry,no discount this time!');
         }
         $(this).unbind('click');
     });
