@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		background: #000;
+	}
+	p{
+		color: #33FF66;
+		font-family: Tahome,Verdana,Arial,Helvetica,sans-serif;
+		font-size: 12px;
+	}
+	#frame{
+		position: absolute;
+		left: 100px;
+		top: 100px;
+		width:545px;
+		height:629px;
+		background: url(img/frame.png);
+		z-index: 2;
+		overflow: hidden;
+	}
+	#pic-box{
+		position: relative;
+		left: 91px;
+		top: 84px;
+		width:367px;
+		height: 460px;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.face{
+		position: relative;
+		left: 0px;
+		top:0px;
+		z-index: 0;
+	}
+	#head{
+		height: 172px;
+	}
+	#eyes{
+		height: 79px;
+	}
+	#nose{
+		height: 86px;
+	}
+	#mouth{
+		height: 117px;
+	}
+	#container{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 0;
+	}
+	.lightning{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+	}
+/*	#text_top{
+		position: relative;
+		z-index: 4;
+	}*/
+</style>
+<body>
+	<header id="top">
+		<img src="img/Monster_Mashup.png" alt="">
+		<p>动手</p>
+	</header>
+	<div id="container">
+		<img class="lightning" id="lightning1" src="img/lightning-01.jpg" alt="">
+		<img class="lightning" id="lightning2" src="img/lightning-02.jpg" alt="">
+		<img class="lightning" id="lightning3" src="img/lightning-03.jpg" alt="">
+		<div id="frame">
+			<div id="pic-box">
+				<div id="head" class="face"><img src="img/headsstrip.jpg" alt=""></div>
+				<div id="eyes" class="face"><img src="img/eyesstrip.jpg" alt=""></div>
+				<div id="nose" class="face"><img src="img/nosesstrip.jpg" alt=""></div>
+				<div id="mouth" class="face"><img src="img/mouthsstrip.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="org/jquery-1.6.2.min.js"></script>
+<script src="org/ds.js"></script>
+</html>

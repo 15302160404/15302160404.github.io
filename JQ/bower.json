@@ -1,0 +1,22 @@
+{
+  "name": "a",
+  "authors": [
+    "tao"
+  ],
+  "description": "a",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "org",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.6.2"
+  }
+}
