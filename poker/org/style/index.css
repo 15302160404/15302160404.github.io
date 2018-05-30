@@ -1,0 +1,77 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	height:700px;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.me{
+	width: 100%;
+	text-align: center;
+}
+#m0 div,#m1 div,#m4 div,#m5 div,#m6 div,#m7 div{
+	float: left;
+	margin-left: 10px;
+}
+#m2 div,#m3 div,#m8 div,#m9 div{
+	float: right;
+	margin-right: 10px;
+}
+.start{
+	position: absolute;
+	left:44%;
+	top:38%;
+	z-index: 9999;
+}
+.start img{
+	cursor: pointer;
+	position: relative;
+	height: 150px;
+}
+p{
+	color:#fff;
+	font-size: 30px;
+}
+.add_cards{
+	height: 150px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
+.replay img{
+	height: 100px;
+	position: absolute;
+	bottom: 30px;
+	right:30px;
+	cursor: pointer;
+}
+.c_cards_show{
+	margin-top:50px;
+	margin-right:300px;
+}
+.c_cards_show img{
+	height: 150px;
+}
+.m_cards{
+	margin-top:150px;
+	margin-left:300px;
+}
+.m_cards img{
+	height: 150px;
+}
+.show_result{
+	position: absolute;
+	top:40%;
+	left:45%;
+}
+.isWin{
+	height: 100px;
+	cursor: pointer;
+	box-shadow: 3px 3px 2px;
+}
+.c_card1 img,.c_card2 img{
+	height: 150px;
+	display: none;
+}

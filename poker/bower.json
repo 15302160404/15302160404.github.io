@@ -1,0 +1,22 @@
+{
+  "name": "21point",
+  "homepage": "https://github.com/15302160404/15302160404.github.io",
+  "authors": [
+    "taopapa"
+  ],
+  "description": "21点扑克游戏",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "org",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.*.*"
+  }
+}

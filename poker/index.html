@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TwentyOne Game</title>
+	<link rel="stylesheet" href="org/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="org/style/index.css">
+</head>
+<body class="container">
+	<!-- 开始游戏按钮 -->
+	<div class="start">
+		<img src="org/img/start.jpg" alt="" class="start_img img-responsive img-circle">
+	</div>
+	<!-- 分数显示 -->
+	<div class="score">
+		<p>
+			分数：<span class="show_score"></span>
+		</p>
+	</div>
+	<!-- 游戏结果 -->
+	<div class="show_result">
+		<img src="org/img/isWin.png" alt="" class="img-responsive img-circle isWin">
+	</div>
+	<!-- 扑克卡组 -->
+	<div class="cards">
+		<img src="org/img/back.jpg" alt="" class="img-responsive img-thumbnail add_cards">
+	</div>
+	<!-- 重置游戏按钮 -->
+	<div class="replay">
+		<img src="org/img/replay.jpg" alt="" class="img-responsive img-circle replayGame">
+	</div>
+	<!-- 游戏界面 start -->
+	<div class="wra">
+		<div class="play">
+			<!-- 电脑人 -->
+			<div class="row">
+				<div class="computer">
+					<div class="c_cards_show">
+						<div id="m2">
+							<div>
+								<img src="org/img/back.jpg" alt="" class="img-responsive img-thumbnail">
+							</div>
+						</div>
+						<div id="m3">
+							<div>
+								<img src="org/img/back.jpg" alt="" class="img-responsive img-thumbnail">
+							</div>
+						</div>
+					</div>
+					<div class="c_cards">
+						<div id="m8">
+							<div class="c_card1">
+								<img class="img-responsive img-rounded">
+							</div>
+						</div>
+						<div id="m9">
+							<div class="c_card2">
+								<img class="img-responsive img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 玩家 -->
+			<div class="row">
+				<div class="me">
+					<div class="m_cards">
+						<div id="m0" class="me_cards">
+							<div class="m_card1">
+								<img class="img-responsive img-rounded">
+							</div>
+						</div>
+						<div id="m1" class="me_cards">
+							<div class="m_card2">
+								<img class="img-responsive img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<!-- 游戏界面 end -->
+</body>
+<script src="org/jquery/dist/jquery.min.js"></script>
+<script src="org/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="org/style/index.js"></script>
+</html>
