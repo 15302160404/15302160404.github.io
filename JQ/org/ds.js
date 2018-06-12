@@ -1,3 +1,4 @@
+var a1,a2,a3;
 $(document).ready(function() {
 	var num =0;
 	goLightning();
@@ -8,12 +9,14 @@ $(document).ready(function() {
 	face('#nose',num);
 	face('#mouth',num);
 	function goLightning(){
-		setInterval('$("#lightning1").fadeIn(250).fadeOut(250)',2000);
-		setInterval('$("#lightning2").fadeIn("fast").fadeOut("fast")',3000);
-		setInterval('$("#lightning3").fadeIn("fast").fadeOut("fast")',4000);
+		a1 = setInterval('$("#lightning1").fadeIn(250).fadeOut(250)',7000);
+		a2 = setInterval('$("#lightning2").fadeIn("fast").fadeOut("fast")',5000);
+		a3 = setInterval('$("#lightning3").fadeIn("fast").fadeOut("fast")',3000);
 	}
 	function stopLightning(){
-		clearInterval(goLightning());
+		clearInterval(a1);
+		clearInterval(a2);
+		clearInterval(a3);
 	}
 	function face(id,num){
 		$(id).click(function(){
