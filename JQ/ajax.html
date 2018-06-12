@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<script src="org/jquery-1.6.2.min.js"></script>
+	<script src="org/ajax.js"></script>
+	<style>
+		body{
+			background: #000;
+			color: white;
+		}
+		.main{
+			color:#111;
+			width: 500px;
+			margin: 8px auto;
+		}
+		.main>li,.main>ul>li{
+			list-style: none;
+			float: left;
+		}
+		.main ul a{
+			display: block;
+			padding:6px 10px;
+			text-decoration: none !important;
+			margin:1px 1px 1px 0;
+			color: white;
+			background: #444;
+		}
+		.main ul a:hover{
+			color:white;
+			background: #111;
+		}
+		.main ul a.selected {
+			margin-bottom: 0;
+			color: #000;
+			background: snow;
+			border-bottom: 1px solid snow;
+			cursor: default;
+		}
+		.main div{
+			padding:10px 10px 8px 10px;
+			*padding-top:3px;
+			*margin-top:-15px;
+			clear: left;
+			background: snow;
+			height:300px;
+		}
+		.main div a{
+			color:#000;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<ul class="idTabs">
+			<li><a href="#about">About</a></li>
+			<li><a href="#finishers">Finishers</a></li>
+		</ul>
+		<div id="about">
+			<h4>About</h4>
+			This Race Bit to Byte Campaign!
+		</div>
+		<div id="finishers">
+			<h4>Finishers</h4>
+			<ul>
+				<li>Name:***<span id="updatedTime"></span></li>
+				<li>Name:***</li>
+				<li>Name:***</li>
+				<li>Name:***</li>
+				<li>Name:***</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
